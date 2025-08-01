@@ -2,7 +2,8 @@ CREATE UNLOGGED TABLE balance (
     name TEXT NOT NULL,
     value NUMERIC(12, 2) NOT NULL,
     total NUMERIC(10, 0) NOT NULL,
-    status boolean NOT NULL
+    status boolean NOT NULL,
+    updated_at TIMESTAMP not null default now()
 );
 
 
